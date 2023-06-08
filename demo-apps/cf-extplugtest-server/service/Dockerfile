@@ -16,7 +16,7 @@
 #
 # usage: docker build . -t <tag> service/Dockerfile
 
-FROM eclipse-temurin:17-jre-focal
+FROM eclipse-temurin:17-jre-focal@sha256:20534a45cc565ac436593164c7f986f9499aa981b5bb8d936a11fcc25e41c55a
 
 RUN mkdir /opt/app
 COPY ./service/build ./CaliforniumReceivetest3.properties /opt/app/
